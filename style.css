@@ -17,6 +17,7 @@ body {
     align-items: center;
     gap: 50px;
     /* position: relative; */
+    overflow-x: hidden;
 }
 
 /* ----------------------------------------------- Navigation Bar ----------------------------------------------- */
@@ -570,11 +571,13 @@ nav {
 /* --------------- */
 .attribution {
     position: fixed;
-    bottom: 20px;
+    bottom: 0;
+    padding: 20px 0px;
+    margin-top: 20px;
     width: max-content;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 425px) {
     body {
         gap: 0px;
     }
@@ -798,8 +801,6 @@ nav {
 
     .attribution {
         position: relative;
-        padding: 20px 0px;
-        margin-top: 20px;
         width: 70%;
     }
 }
