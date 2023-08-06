@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+    <script
+      src="https://kit.fontawesome.com/9ec544a430.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!----------------------------------------------- Navigation Bar ----------------------------------------------->
+    <nav>
+      <div class="navLeft">
+        <div class="menuIcon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo">
+          <img src="images/logo.svg" alt="" />
+        </div>
+        <div class="navListBackground">
+          <div class="navList">
+            <div class="closeMenu">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <a href="#">Collections</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="navRight">
+        <a href="#" class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <div class="itemsInBasket"></div>
+        </a>
+        <div class="basket">
+          <div class="basketTitle">Cart</div>
+          <div class="items">
+            <div class="emptyBasket">Your cart is empty</div>
+            <!-- ---------- item 1 ----------- -->
+            <!-- <div class="item">
+            </div> -->
+          </div>
+
+          <div class="checkout">Checkout</div>
+        </div>
+        <a href="#" class="profile">
+          <img src="images/image-avatar.png" alt="" />
+        </a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!----------------------------------------------- Product Gallery ----------------------------------------------->
+      <div id="productGallery" class="productGallery">
+        <div class="mainImage">
+          <img src="images/image-product-1.jpg" alt="" />
+        </div>
+        <div class="galleryImages">
+          <div class="image">
+            <img src="images/image-product-1.jpg" alt="" />
+          </div>
+          <div class="image">
+            <img src="images/image-product-2.jpg" alt="" />
+          </div>
+          <div class="image">
+            <img src="images/image-product-3.jpg" alt="" />
+          </div>
+          <div class="image">
+            <img src="images/image-product-4.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div id="Gallery" class="productGallery">
+        <div class="slider">
+          <div class="closeGallery">
+            <i class="fa-solid fa-xmark"> </i>
+          </div>
+          <div class="left">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="mainSlide">
+            <img src="images/image-product-1.jpg" alt="" />
+          </div>
+          <div class="right">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+
+        <div class="galleryImages">
+          <div class="slide">
+            <img src="images/image-product-1.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="images/image-product-2.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="images/image-product-3.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="images/image-product-4.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!----------------------------------------------- Product Information ----------------------------------------------->
+      <div class="productInfo">
+        <div class="companyName">Sneaker Company</div>
+        <div class="productTitle">Fall Limited Edition Sneakers</div>
+        <div class="productDetails">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer.
+        </div>
+        <div class="productPrice">
+          <div class="discountedprice">
+            <div class="newPrice">$125.00</div>
+            <div class="discount">50%</div>
+          </div>
+
+          <div class="oldPrice">$250.00</div>
+        </div>
+        <div class="purchase">
+          <div class="quantity">
+            <div class="minus">-</div>
+            <div class="number">1</div>
+            <div class="plus">+</div>
+          </div>
+          <div class="addToCart">
+            <div class="cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="add">Add to cart</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/lamis-menghour"
+        >Lamis Menghour</a
+      >.
+    </div>
+
+    <div class="product">
+      <div></div>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>
