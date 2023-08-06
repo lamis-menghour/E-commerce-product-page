@@ -574,7 +574,7 @@ nav {
     width: max-content;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 450px) {
     body {
         gap: 0px;
     }
