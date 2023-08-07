@@ -39,6 +39,7 @@ Selected(slideINDEX);
 // Open or Show the Gallery Full Screen
 productGallery.addEventListener("click", () => {
   Gallery.style.display = "flex";
+  disableScorlling();
 });
 
 // -----------------------------------------------------------------------------
@@ -46,6 +47,7 @@ productGallery.addEventListener("click", () => {
 images.forEach((image) => {
   image.addEventListener("click", () => {
     Gallery.style.display = "flex";
+    disableScorlling();
     var imagesList = Array.from(images);
     var imageIndex = imagesList.indexOf(image);
     slideINDEX = imageIndex;
@@ -102,12 +104,14 @@ right.addEventListener("click", () => {
 // Close or Hide the Gallery Full Screen
 closeGallery.addEventListener("click", () => {
   Gallery.style.display = "none";
+  enableScrolling();
 });
 
 document.addEventListener("keyup", function () {
   evt = window.event;
   if (evt.key === "Escape") {
     Gallery.style.display = "none";
+    enableScrolling();
   }
 });
 
